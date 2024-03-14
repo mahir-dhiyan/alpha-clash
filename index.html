@@ -103,14 +103,14 @@
     </section>
     <!-- Play Ground end -->
     <!-- Final score -->
-    <section class="score flex justify-center items-center min-h-screen hidden">
+    <section id="final-score" class="flex justify-center items-center min-h-screen hidden">
       <div
         class="text-white rounded-lg border-[#ffffff33] border-2 p-11 text-center bg-gradient-to-r from-purple-800 to-violet-800 space-y-6">
         <h1 class="text-8xl"><span class="font-bold ">Score:</span>
-          <span>14</span>
+          <span id="last-score">14</span>
 
         </h1>
-        <button class="btn bg-white text-black">Play Again!!</button>
+        <button onclick="play()" class="btn bg-white text-black">Play Again!!</button>
         <p>Practice will make you Pro</p>
       </div>
     </section>

@@ -28,3 +28,20 @@ function getRandomAlphabet(){
     // console.log(alphabet, index);
     return alphabet;
 }
+function getTextElementValuebyId(elementId){
+    const element = document.getElementById(elementId);
+    const elementText=element.innerText;
+    const value = parseInt(elementText);
+    return value;
+}
+function setTextElementValuebyId(elementId,value){
+    const element = document.getElementById(elementId);
+    element.innerText=value;
+
+}
+function getElementTextbyId(elementId){
+    const element = document.getElementById(elementId);
+    const text = element.innerText;
+    return text;
+    
+}
