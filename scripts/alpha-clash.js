@@ -17,11 +17,25 @@
     if(playerPressed===expectedAlphabet){
         console.log('You get a pont');
         console.log('you have pressed the key correctly',expectedAlphabet);
+      //update score
+      const currentScoreElement = document.getElementById('current-score');
+      const currentScoreText = currentScoreElement.innerText;
+      const currentScore = parseInt(currentScoreText);
+      console.log(currentScore);
+      const newScore = currentScore +1; 
+      currentScoreElement.innerText=newScore;
+        //Start a new round
         removeBackgroundColorById(expectedAlphabet);
         continueGame();
     }
     else{
         console.log('You lose a point');
+        const currentLifeElement = document.getElementById('current-life');
+        let currentLifeText = currentLifeElement.innerText;
+        const currentLife = parseInt(currentLifeText);
+        const newLife=currentLife -1;
+        currentLifeElement.innerText = newLife;
+       
     }
  }
  //Capture keyboard keypress
