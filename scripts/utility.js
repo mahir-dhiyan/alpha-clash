@@ -6,9 +6,15 @@ function showElementbyId(elementId){
     const element = document.getElementById(elementId);
     element.classList.remove('hidden');
 }
+//adding orange background color
 function addBackgroundcolorById(elementId){
      const element = document.getElementById(elementId);
      element.classList.add('bg-orange-400');
+}
+//removing orange background color
+function removeBackgroundColorById(elementId){
+    const element = document.getElementById(elementId);
+    element.classList.remove('bg-orange-400');
 }
 function getRandomAlphabet(){
     //get or create and alphabet array
